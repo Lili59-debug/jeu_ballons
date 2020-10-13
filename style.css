@@ -1,0 +1,20 @@
+.case {
+    width: 200px;   
+}
+
+.row {
+    height: 200px;
+}
+
+img {
+    max-width: 100%;
+    cursor: crosshair;
+}
+
+h1 {
+    font-family: cursive;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+}
