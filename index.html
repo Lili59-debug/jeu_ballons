@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/ballon-vert.png" sizes="32x32" type="image/png">
     <title>Jeu des ballons Aurélie</title>
@@ -12,47 +13,52 @@
 
 <body>
     <main class="container">
-    <h1 class="text-center">Éclate les ballons en passant ta souris dessus</h1>
-<div class="row">
-    <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-vert.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-</div>
+        <h1 class="text-center">Découvre le fantastique jeu des ballons !</h1>
+        <img src="img/ballon-vert.png" alt="image de ballon" id="illustration">
+        <button id="jouer">Je commence à jouer</button>
+        <h2 id="message"></h2>
+        <div id="ballons">
+            <div class="row">
+                <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-vert.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+            </div>
 
-<div class="row">
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-violet.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-</div>
+            <div class="row">
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-violet.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+            </div>
 
-<div class="row">
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-vert.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-</div>
+            <div class="row">
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-vert.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+            </div>
 
-<div class="row">
-    <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-violet.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-vert.png" onclick="eclater(this)" alt=""></div>
-</div>
+            <div class="row">
+                <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-violet.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-vert.png" onclick="eclater(this)" alt=""></div>
+            </div>
 
-<div class="row">
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-    <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
-</div>
-</main>
+            <div class="row">
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon-bleu.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+                <div class="col case"><img src="img/ballon.png" onclick="eclater(this)" alt=""></div>
+            </div>
+        </div>
+    </main>
     <script src="main.js"></script>
 
 </body>

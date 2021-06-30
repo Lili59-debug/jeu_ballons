@@ -1,3 +1,47 @@
+main {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    display: block;
+    font-size: 2.2em;
+    border: none;
+    background-color: #8A2BE2;
+    color: white;
+    padding: 15px 35px 15px 35px;
+    margin: 0 auto;
+    border: none;
+}
+
+#illustration {
+    animation: bounce 1.4s ease infinite;
+}
+
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 4em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    margin-bottom: 1em;
+}
+
+h2 {
+    text-align: center;
+}
+
+#ballons {
+    display: none;
+}
+
 .case {
     width: 200px;   
 }
@@ -9,12 +53,4 @@
 img {
     max-width: 100%;
     cursor: crosshair;
-}
-
-h1 {
-    font-family: cursive;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
 }
